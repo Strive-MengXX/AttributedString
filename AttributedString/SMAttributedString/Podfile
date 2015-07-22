@@ -1,0 +1,3 @@
+platform :ios,7.0  
+  
+pod 'GONMarkupParser', '~> 0.6.5'

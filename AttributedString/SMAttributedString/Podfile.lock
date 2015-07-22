@@ -1,0 +1,13 @@
+PODS:
+  - GONMarkupParser (0.6.5):
+    - NSString+Color
+  - NSString+Color (1.1.1)
+
+DEPENDENCIES:
+  - GONMarkupParser (~> 0.6.5)
+
+SPEC CHECKSUMS:
+  GONMarkupParser: fc78619d803ce9287da41b5f3694ea9a13877d49
+  NSString+Color: 5fe66e206d0c46ebb59fa7ec57a1492faf11d92a
+
+COCOAPODS: 0.36.1

@@ -14,6 +14,7 @@
 		629C8B631B5F96C200680275 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629C8B621B5F96C200680275 /* Images.xcassets */; };
 		629C8B661B5F96C200680275 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 629C8B641B5F96C200680275 /* LaunchScreen.xib */; };
 		629C8B721B5F96C200680275 /* SMAttributedStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 629C8B711B5F96C200680275 /* SMAttributedStringTests.m */; };
+		C8EA0093F501CED654874FEF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 753692E89077C8CB29E6463D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AF842BC20182791E2D2D4D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		629C8B521B5F96C200680275 /* SMAttributedString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMAttributedString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C8B561B5F96C200680275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		629C8B571B5F96C200680275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		629C8B6B1B5F96C200680275 /* SMAttributedStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMAttributedStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		629C8B701B5F96C200680275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		629C8B711B5F96C200680275 /* SMAttributedStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAttributedStringTests.m; sourceTree = "<group>"; };
+		753692E89077C8CB29E6463D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36D9CE850A8A28C90AEA155 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8EA0093F501CED654874FEF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				629C8B541B5F96C200680275 /* SMAttributedString */,
 				629C8B6E1B5F96C200680275 /* SMAttributedStringTests */,
 				629C8B531B5F96C200680275 /* Products */,
+				68DF5EA00861097AB92E1527 /* Pods */,
+				A1D8F2B0AC77FD866111C3EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68DF5EA00861097AB92E1527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AF842BC20182791E2D2D4D8 /* Pods.debug.xcconfig */,
+				E36D9CE850A8A28C90AEA155 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1D8F2B0AC77FD866111C3EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753692E89077C8CB29E6463D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 629C8B751B5F96C200680275 /* Build configuration list for PBXNativeTarget "SMAttributedString" */;
 			buildPhases = (
+				B080E4326C2B1758ED331762 /* Check Pods Manifest.lock */,
 				629C8B4E1B5F96C200680275 /* Sources */,
 				629C8B4F1B5F96C200680275 /* Frameworks */,
 				629C8B501B5F96C200680275 /* Resources */,
+				27649FB940A3D45D672D02B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27649FB940A3D45D672D02B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B080E4326C2B1758ED331762 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		629C8B4E1B5F96C200680275 /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		629C8B761B5F96C200680275 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF842BC20182791E2D2D4D8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMAttributedString/Info.plist;
@@ -357,6 +417,7 @@
 		};
 		629C8B771B5F96C200680275 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36D9CE850A8A28C90AEA155 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMAttributedString/Info.plist;
@@ -418,6 +479,7 @@
 				629C8B771B5F96C200680275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		629C8B781B5F96C200680275 /* Build configuration list for PBXNativeTarget "SMAttributedStringTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				629C8B7A1B5F96C200680275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
