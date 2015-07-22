@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>721DE9DE-68FC-4CA8-A21F-4ABB2CD97C9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DB822A70B908DABC4A0303FCF922B295A8F3431D</key>
+		<string>https://github.com/Strive-MengXX/AttributedString.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AttributedString/SMAttributedString/SMAttributedString.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DB822A70B908DABC4A0303FCF922B295A8F3431D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Strive-MengXX/AttributedString.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DB822A70B908DABC4A0303FCF922B295A8F3431D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DB822A70B908DABC4A0303FCF922B295A8F3431D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E5%AF%8C%E6%96%87%E6%9C%AC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
